@@ -1,21 +1,11 @@
 
-# MUFC · 5 temaer (Streamlit demo)
+# MUFC · 5 temaer (Streamlit demo) — rettet version
 
-Klar til Streamlit Cloud og iPhone.
+Denne version retter SyntaxError på iPhone/Streamlit ved at bruge triple-quoted f-strings.
 
-## Filer
-- `mufc_mock_app.py` — app
-- `requirements.txt` — pakker
+## Deploy
+1. Opret public GitHub repo.
+2. Upload `mufc_mock_app.py` + `requirements.txt`.
+3. Streamlit Cloud → New app → main file path: `mufc_mock_app.py`.
 
-## Deploy på iPhone
-1) Opret public GitHub-repo (fx `mufc-demo`).
-2) Upload `mufc_mock_app.py` + `requirements.txt`.
-3) Streamlit Cloud → **New app** → repo = dit, branch = `main`, main file = `mufc_mock_app.py` → **Deploy**.
-
-## Valgfrit (live data)
-- Tilføj secret: `FOOTBALL_DATA_API_KEY` i Streamlit → Settings → Secrets.
-
-## Fejl du kan møde
-- `ModuleNotFoundError`: mangler `requirements.txt`.
-- `File not found`: forkert `Main file path` (skal være `mufc_mock_app.py` i repo-roden).
-- Tom side: tryk **Rerun** eller drej telefonen vandret.
+Demo mode kører uden API-nøgle. Nyheder/rygter er live via RSS.

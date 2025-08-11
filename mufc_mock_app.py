@@ -117,9 +117,9 @@ with tabs[0]:
     if not items:
         st.info("Ingen nyheder lige nu.")
     for it in items:
-        st.markdown(f'**{it.get("title","(ingen titel)")}**  
+        st.markdown(f"""**{it.get("title","(ingen titel)")}**  
 {it.get("summary","")}  
-[Link]({it.get("link","#")}) · {it.get("when","")}')
+[Link]({it.get("link","#")}) · {it.get("when","")}""")
         st.divider()
 
 with tabs[1]:
@@ -127,9 +127,9 @@ with tabs[1]:
     if not items:
         st.info("Ingen rygter lige nu.")
     for it in items:
-        st.markdown(f'**{it.get("title","(ingen titel)")}**  
+        st.markdown(f"""**{it.get("title","(ingen titel)")}**  
 {it.get("summary","")}  
-[Link]({it.get("link","#")}) · {it.get("when","")}')
+[Link]({it.get("link","#")}) · {it.get("when","")}""")
         st.divider()
 
 with tabs[2]:
