@@ -1,11 +1,10 @@
 
-# MUFC · 5 temaer (Streamlit demo) — rettet version
+# Fodbold · 5 temaer (vælg klub)
 
-Denne version retter SyntaxError på iPhone/Streamlit ved at bruge triple-quoted f-strings.
+Mobilvenlig Streamlit-app med valg af klub og liga.
+- Nyheder/rygter (RSS) kræver ingen nøgle
+- Kampprogram/resultater/stilling kræver `FOOTBALL_DATA_API_KEY` (football-data.org)
 
-## Deploy
-1. Opret public GitHub repo.
-2. Upload `mufc_mock_app.py` + `requirements.txt`.
-3. Streamlit Cloud → New app → main file path: `mufc_mock_app.py`.
-
-Demo mode kører uden API-nøgle. Nyheder/rygter er live via RSS.
+## Deploy (som før)
+- Upload `football_multi_app.py` + `requirements.txt` i repo-roden
+- Streamlit Cloud → New app → main file path: `football_multi_app.py`
